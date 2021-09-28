@@ -1,0 +1,2 @@
+# easyLaTeX
+LaTeX code generator
