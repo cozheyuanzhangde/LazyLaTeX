@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.5)  6 NOV 2021 21:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.5)  6 NOV 2021 23:12
 entering extended mode
 **./output.tex
 (output.tex
@@ -498,30 +498,51 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 \c@lstlisting=\count305
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-3.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 17
+.
+
+(D:\Installed\MiKTeX\tex/latex/base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+
+
+(D:\Installed\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+
+
+(D:\Installed\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
+1.
 
 (D:\Installed\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [1
 
-{C:/Users/BrianZ/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (output.aux) )
- 
+{C:/Users/BrianZ/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] (output.au
+x) ) 
 Here is how much of TeX's memory you used:
- 15529 strings out of 479618
- 289319 string characters out of 2876824
- 681361 words of memory out of 3000000
- 32477 multiletter control sequences out of 15000+200000
- 404888 words of font info for 32 fonts, out of 3000000 for 9000
+ 15579 strings out of 479618
+ 290169 string characters out of 2876824
+ 730361 words of memory out of 3000000
+ 32506 multiletter control sequences out of 15000+200000
+ 407566 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,6n,89p,438b,1125s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/Installed/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Installed/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb><D:/Installed/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr12.pfb><D:/Installed/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><
-D:/Installed/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on output.pdf (1 page, 49889 bytes).
+ 86i,11n,89p,438b,1624s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Installed/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Installed/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmbx10.pfb><D:/Installed/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmex10.pfb><D:/Installed/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><D:/Installed/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Installed
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Installed/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmti10.pfb><D:/Installed/MiKTeX/fonts/type1/urw/courier/
+ucrr8a.pfb>
+Output written on output.pdf (2 pages, 81862 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
+ 41 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

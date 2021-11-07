@@ -1,13 +1,41 @@
 import re
 import sys
 import os
-def generate_latex_code(gen, code_path):
+import json
+import numpy as np
+def generate_latex_code(ith, gen, code_path):
+    gen.append(r"\textbf{Code Snippet " + str(ith+1) + "}")
     gen.append(r"\begin{lstlisting}[basicstyle=\footnotesize\ttfamily, breaklines]")
     with open(code_path, 'r') as f:
         code = f.read()
         gen.append(code)
     gen.append(r"\end{lstlisting}")
     
+def parse_list_to_matrix(string_list):
+    converted = []
+    string_for_return = ""
+    matrix = json.loads(string_list)
+    converted.append(r"$\begin{pmatrix}")
+    if(len(matrix) > 1):
+        for i in range(0, len(matrix) - 1):
+            sub_matrix = matrix[i]
+            row = ""
+            row = row + str(sub_matrix[0])
+            for j in range(1, len(sub_matrix)):
+                row = row + r" & " + str(sub_matrix[j])
+            row = row + r"\\"
+            converted.append(row)
+    sub_matrix = matrix[len(matrix) - 1]
+    row = ""
+    row = row + str(sub_matrix[0])
+    for j in range(1, len(sub_matrix)):
+        row = row + r" & " + str(sub_matrix[j])
+    converted.append(row)
+    converted.append(r"\end{pmatrix}$")
+    for row in converted:
+        string_for_return = string_for_return + row + '\n'
+    return string_for_return
+
 def output_generated(gen):
     if os.path.exists('output.tex'):
         os.remove('output.tex')
@@ -29,6 +57,13 @@ def pre_process(content):
     answers = re.findall(regex_answers, content)
     codes = re.findall(regex_codes, content)
     return name, course_name, homework_name, questions, answers, codes
+
+def process_text(text):
+    regex_matrix = r'matrix\{(.*?)\}'
+    text = text.replace(r"\n", r"\newline ")
+    print(text)
+    return re.sub(regex_matrix, lambda x: parse_list_to_matrix(x.group(1)), text)
+    
 
 def main():
     with open(sys.argv[1], 'r') as f:
@@ -54,11 +89,12 @@ def main():
         question = r"\i" + r" " + questions[i]
         generated.append(question)
         generated.append(r"\begin{tcolorbox}")
-        generated.append(answers[i])
+        generated.append(process_text(answers[i]))
         generated.append(r"\end{tcolorbox}")
-    for code in codes:
-        generate_latex_code(generated, code)
     generated.append(r"\ene")
+    generated.append(r"\leavevmode\newline")
+    for i in range(0, len(codes)):
+        generate_latex_code(i, generated, codes[i])
     generated.append(r"\end{document}")
     output_generated(generated)
 

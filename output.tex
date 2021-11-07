@@ -10,16 +10,24 @@
 \usepackage{subcaption}
 \usepackage{tcolorbox}
 \begin{document}
-\lecture{cs370}{hw06}{Brian}
+\lecture{Computer Science 101}{HW01}{Brian}
 \bee
 \i Do you know my name?
 \begin{tcolorbox}
-My name is Brian.
+My name is Brian.\newline $\begin{pmatrix}
+1 & 2 & 3\\
+4 & 5 & 6\\
+7 & 8 & 9
+\end{pmatrix}$
+
 \end{tcolorbox}
 \i Do you know my age?
 \begin{tcolorbox}
 My age is 21.
 \end{tcolorbox}
+\ene
+\leavevmode\newline
+\textbf{Code Snippet 1}
 \begin{lstlisting}[basicstyle=\footnotesize\ttfamily, breaklines]
 # Python program for reversal algorithm of array rotation
   
@@ -51,5 +59,32 @@ printArray(arr)
   
 # This code is contributed by Devesh Agrawal
 \end{lstlisting}
-\ene
+\textbf{Code Snippet 2}
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily, breaklines]
+# Python program to find N largest
+# element from given list of integers
+  
+# Function returns N largest elements
+def Nmaxelements(list1, N):
+    final_list = []
+  
+    for i in range(0, N): 
+        max1 = 0
+          
+        for j in range(len(list1)):     
+            if list1[j] > max1:
+                max1 = list1[j];
+                  
+        list1.remove(max1);
+        final_list.append(max1)
+          
+    print(final_list)
+  
+# Driver code
+list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
+N = 2
+  
+# Calling the function
+Nmaxelements(list1, N)
+\end{lstlisting}
 \end{document}
