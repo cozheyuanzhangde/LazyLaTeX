@@ -1,0 +1,8 @@
+myname(Brian)
+coursename(cs370)
+homeworkname(hw06)
+question(Do you know my name?)
+answer(My name is Brian.)
+question(Do you know my age?)
+answer(My age is 21.)
+code(test.py)
