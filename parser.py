@@ -61,7 +61,7 @@ def pre_process(content):
 def process_text(text):
     regex_matrix = r'matrix\{(.*?)\}'
     text = text.replace(r"\n", r"\newline ")
-    print(text)
+    #print(text)
     return re.sub(regex_matrix, lambda x: parse_list_to_matrix(x.group(1)), text)
     
 
