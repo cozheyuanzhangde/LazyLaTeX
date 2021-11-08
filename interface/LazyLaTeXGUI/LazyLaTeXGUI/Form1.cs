@@ -20,8 +20,8 @@ namespace LazyLaTeXGUI
             startInfo.FileName = "cmd.exe";
             startInfo.Arguments = args;
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            process.StartInfo = startInfo;
-            process.Start();
+            System.Diagnostics.Process cmd = System.Diagnostics.Process.Start(startInfo);
+            cmd.WaitForExit();
         }
 
         public Form1()
@@ -31,7 +31,8 @@ namespace LazyLaTeXGUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            textBox2.Text = "Please write LazyLaTeX on the left textbox and press 'generate'.";
+            button2.Enabled = false;
         }
 
         private void axAcroPDF1_Enter(object sender, EventArgs e)
@@ -41,14 +42,19 @@ namespace LazyLaTeXGUI
 
         private void Form1_Resize(object sender, System.EventArgs e)
         {
-            //textBox1.MinimumSize = new Size(this.Size.Width / 2, textBox1.Size.Height);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            button2.Enabled = false;
+            textBox2.Text = "Generating tex...";
             File.WriteAllText("test.lazytex", textBox1.Text);
             run_cmd("/C python ../../../../../lazylatex.py" + " " + "test.lazytex");
+            textBox2.Text = "Tex generated...compiling pdflatex...";
             run_cmd("/C pdflatex output.tex");
+            button2.Enabled = true;
+            textBox2.Text = "PDF generated. Please press 'show' to display.";
         }
 
         private void button2_Click(object sender, EventArgs e)

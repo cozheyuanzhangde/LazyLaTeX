@@ -2,11 +2,9 @@ from ..utils import parse_text
 
 def generate_latex_code(ith, gen, code_path):
     gen.append(r"\textbf{Code Snippet " + str(ith+1) + "}")
-    gen.append(r"\begin{lstlisting}[basicstyle=\footnotesize\ttfamily, breaklines]")
-    with open(code_path, 'r') as f:
-        code = f.read()
-        gen.append(code)
-    gen.append(r"\end{lstlisting}")
+    gen.append(r"\lstinputlisting[language=Python]")
+    command = r"{" + code_path + r"}"
+    gen.append(command)
 
 def generate(generated, name, course_name, homework_name, questions, answers, codes):
     title = r"\lecture{" + course_name + r"}{" + homework_name + r"}{" + name + r"}"
