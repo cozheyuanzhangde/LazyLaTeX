@@ -1,0 +1,15 @@
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\bin\Debug\LazyLaTeXGUI.exe.config
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\bin\Debug\LazyLaTeXGUI.exe
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\bin\Debug\LazyLaTeXGUI.pdb
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\obj\Debug\LazyLaTeXGUI.csprojAssemblyReference.cache
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\obj\Debug\LazyLaTeXGUI.Form1.resources
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\obj\Debug\LazyLaTeXGUI.Properties.Resources.resources
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\obj\Debug\LazyLaTeXGUI.csproj.GenerateResource.cache
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\obj\Debug\LazyLaTeXGUI.csproj.CoreCompileInputs.cache
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\obj\Debug\LazyLaTeXGUI.exe
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\obj\Debug\LazyLaTeXGUI.pdb
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\BrianZ\Desktop\c0zzydeProjects\LazyLaTeX\interface\LazyLaTeXGUI\LazyLaTeXGUI\obj\Debug\LazyLaTeXGUI.csproj.ResolveComReference.cache

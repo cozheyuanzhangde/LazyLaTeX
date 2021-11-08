@@ -13,7 +13,7 @@ def main():
     generated = []
     initial.generate(generated)
     make_everything.generate(generated, name, course_name, homework_name, questions, answers, codes)
-    tex_builder.build(generated, "./test")
+    tex_builder.build(generated, "")
 
 if __name__ == '__main__':
     main()
