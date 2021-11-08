@@ -1,0 +1,13 @@
+def generate(generated):
+    generated.append(r"\documentclass[fleqn]{article}")
+    generated.append(r"\usepackage{graphicx}")
+    generated.append(r"\usepackage{./mydefs}")
+    generated.append(r"\usepackage{./notes}")
+    generated.append(r"\usepackage{url}")
+    generated.append(r"\usepackage{float}")
+    generated.append(r"\usepackage{amsmath}")
+    generated.append(r"\usepackage{listings}")
+    generated.append(r"\usepackage{courier}")
+    generated.append(r"\usepackage{subcaption}")
+    generated.append(r"\usepackage{tcolorbox}")
+    generated.append(r"\begin{document}")
