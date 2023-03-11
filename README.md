@@ -1,4 +1,3 @@
-# LazyLaTeX for Homeworks - LaTeX code generator
+# LazyLaTeX: simple commands to generate LaTeX code
 
-Generate LaTeX code using very simple commands:
 ![LazyLaTeX](docs/images/LazyLaTeX.jpg)
